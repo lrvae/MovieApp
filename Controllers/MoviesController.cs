@@ -46,7 +46,7 @@ namespace MovieApp.Controllers
             var result = await _movieRepository.AddMovie(model);
             if (result >= 1)
             {
-                return Ok(new { Message = "Movie added succesfully." });
+                return Ok(new { Message = "Movie added succesfully. cambio" });
             }
 
             return StatusCode(500, new { Message = "Some error happened." });
