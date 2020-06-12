@@ -34,7 +34,7 @@ namespace MovieApp.Controllers
             return NotFound(new { Message = $"Movie with id {id} is not available." });
         }
 
-        [HttpGet("api/directors")]
+        [HttpGet("api/directors")] //directors
         public async Task<IActionResult> GetDirectors()
         {
             return Ok(await _movieRepository.GetAllDirectors());
